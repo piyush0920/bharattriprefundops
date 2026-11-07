@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101b35" />
+  <meta name="description" content="BharatTrip RefundOps — a frontend-only refund workflow prototype." />
+  <title>BharatTrip | RefundOps</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-lockup">
+        <div class="brand-mark">B</div>
+        <div class="brand-copy"><strong>BharatTrip</strong><span>REFUND OPERATIONS</span></div>
+      </div>
+
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <button class="nav-item active" data-view="support"><span class="nav-icon">▦</span><span>Support desk</span><span class="nav-count" id="supportNavCount">0</span></button>
+        <button class="nav-item" data-view="finance"><span class="nav-icon">◫</span><span>Finance desk</span><span class="nav-count" id="financeNavCount">0</span></button>
+        <button class="nav-item" data-view="management"><span class="nav-icon">▤</span><span>Management</span></button>
+        <button class="nav-item" data-view="tickets"><span class="nav-icon">≡</span><span>All tickets</span></button>
+      </nav>
+
+      <div class="sidebar-rule"></div>
+      <div class="workspace-label">OPERATING RULES</div>
+      <div class="sidebar-rule-card">
+        <span class="rule-icon">✓</span>
+        <div><strong>No ticket, no refund</strong><p>Every request receives a traceable ticket ID before handoff.</p></div>
+      </div>
+      <div class="sidebar-rule-card muted-rule">
+        <span class="rule-icon">↗</span>
+        <div><strong>Finance owns closure</strong><p>Only a Finance payment or decline can close a ticket.</p></div>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="prototype-pill"><span class="pulse-dot"></span> Prototype environment</div>
+        <p>Demo data is stored in this browser only.</p>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb"><span>Operations</span><b>/</b><strong id="breadcrumbCurrent">Support desk</strong></div>
+        <div class="topbar-actions">
+          <div class="environment-tag"><span class="pulse-dot"></span> DEMO MODE</div>
+          <button class="icon-button" id="notificationsButton" aria-label="Show activity updates" title="Activity updates">♧<span class="notification-dot" id="notificationDot"></span></button>
+          <div class="user-chip"><div class="avatar" id="userAvatar">PN</div><div class="user-meta"><strong id="userName">Priya Nair</strong><span id="userRole">Support · Agent</span></div><span class="chevron">⌄</span></div>
+        </div>
+      </header>
+
+      <div class="content-wrap" id="appContent" aria-live="polite"></div>
+      <footer class="app-footer"><span>RefundOps prototype · BharatTrip</span><span>Frontend simulation only · Not connected to payment systems</span></footer>
+    </main>
+  </div>
+
+  <div class="modal-root" id="modalRoot"></div>
+  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+  <div class="notification-popover" id="notificationPopover" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
