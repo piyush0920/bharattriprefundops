@@ -12,25 +12,6 @@ A responsive, frontend-only refund request management prototype for GitHub Pages
 - **Persistence:** ticket data is saved in the browser's `localStorage`.
 - **Export/reset:** export the current browser data as JSON or reset to the original synthetic sample records.
 
-## Run locally
-
-No build step or package installation is required.
-
-1. Download or clone this folder.
-2. Open `index.html` in a modern browser, or run a local static server such as `python -m http.server 8000` from this folder.
-3. Visit `http://localhost:8000`.
-
-## Deploy to GitHub Pages
-
-1. Create a GitHub repository (or use an existing repository for the prototype).
-2. Add `index.html`, `styles.css`, `app.js` and `README.md` to the repository root.
-3. Push the files to the branch you want to publish (commonly `main`).
-4. In GitHub, open **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select the publishing branch and `/(root)` folder, then save.
-7. Open the Pages URL shown by GitHub after deployment.
-
-Because this app is static HTML/CSS/JavaScript, GitHub Pages can host it directly. No FastAPI server or database is used.
 
 ## Important prototype limitations
 
