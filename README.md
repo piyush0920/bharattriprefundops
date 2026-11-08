@@ -33,16 +33,6 @@ After analysis, Support can edit the extracted values and draft reply, attach th
 4. Paste an unrelated message. Expected: generic `unclear` result, visible low-confidence warning and explicit confirmation checkboxes for each field. Select a clear classification before confirming a ticket action.
 5. Mark a drafted reply as sent and verify the activity history records the action. Reset sample data and confirm created tickets, reply states and Process issues return to the seeded demo state.
 
-## Deploy to GitHub Pages
-
-1. Create a GitHub repository or use an existing repository for the prototype.
-2. Add `index.html`, `styles.css`, `app.js` and `README.md` to the repository root.
-3. Push the files to the branch you want to publish (commonly `main`).
-4. In GitHub, open **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select the publishing branch and `/(root)` folder, then save.
-7. Open the Pages URL shown by GitHub after deployment.
-
 GitHub Pages serves the static HTML/CSS/JavaScript files directly. The app can also be opened from the local filesystem using `index.html`.
 
 ## Important prototype limitations
